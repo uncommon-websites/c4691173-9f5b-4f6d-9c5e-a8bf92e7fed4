@@ -3,67 +3,67 @@
 	import { ArrowUpRight, ArrowRight } from 'lucide-svelte';
 
 	const services = [
-		{ id: '01', name: 'PHOTOGRAPHY' },
-		{ id: '02', name: 'VIDEOGRAPHY' },
-		{ id: '03', name: 'STYLIST' },
-		{ id: '04', name: 'WEB DESIGN' },
-		{ id: '05', name: 'GRAPHIC DESIGN' },
-		{ id: '06', name: 'ILLUSTRATING' },
-		{ id: '07', name: 'ART DIRECTION' }
+		{ id: '01', name: 'UX RESEARCH' },
+		{ id: '02', name: 'USER INTERFACE DESIGN' },
+		{ id: '03', name: 'PROTOTYPING' },
+		{ id: '04', name: 'USER TESTING' },
+		{ id: '05', name: 'DESIGN SYSTEMS' },
+		{ id: '06', name: 'INTERACTION DESIGN' },
+		{ id: '07', name: 'INFORMATION ARCHITECTURE' }
 	];
 
-	const team = [
-		{ name: 'KRISTEN SKINNER', role: 'PHOTOGRAPHER', img: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop' },
-		{ name: 'ADELE POTTS', role: 'VIDEOGRAPHER', img: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=800&auto=format&fit=crop' },
-		{ name: 'GARY HUBBARD', role: 'STYLIST', img: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop' },
-		{ name: 'LUISA OSBORN', role: 'WEB DESIGNER', img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop' },
-		{ name: 'ANTIONE MATHIS', role: 'GRAPHIC DESIGNER', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop' },
-		{ name: 'REBEKAH MAYER', role: 'ILLUSTRATOR', img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=800&auto=format&fit=crop' },
-		{ name: 'LARRY FISHER', role: 'PHOTOGRAPHER', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop' },
-		{ name: 'CARMELA HERRERA', role: 'VIDEOGRAPHER', img: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=800&auto=format&fit=crop' }
+	const projects = [
+		{ name: 'HYBRID WORK TOOLS', category: 'PRODUCTIVITY APP', img: '/generated/image-designer-sketching-wireframes-on-paper-a-1765511708435-0.webp', description: 'Redesigning remote collaboration for distributed teams' },
+		{ name: 'GAMING PLATFORM', category: 'ENTERTAINMENT', img: '/generated/image-close-up-of-hands-arranging-ui-design-ca-1765511712908-1.webp', description: 'Creating immersive user experiences for gamers' },
+		{ name: 'AI DESIGN ASSISTANT', category: 'AI-POWERED TOOLS', img: '/generated/image-designer-reviewing-digital-prototypes-on-1765511716537-2.webp', description: 'Simplifying complex AI features for designers' },
+		{ name: 'MOBILE BANKING', category: 'FINTECH', img: '/generated/image-young-designer-presenting-design-concept-1765511720011-3.webp', description: 'Building trust through intuitive financial interfaces' },
+		{ name: 'HEALTH TRACKER', category: 'WELLNESS', img: '/generated/image-designer-working-on-laptop-with-design-s-1765511723443-4.webp', description: 'Motivating healthy habits through thoughtful design' },
+		{ name: 'E-LEARNING PLATFORM', category: 'EDUCATION', img: '/generated/image-young-designer-working-focused-at-laptop-1765511741166-9.webp', description: 'Making online learning engaging and accessible' },
+		{ name: 'SOCIAL COMMERCE', category: 'E-COMMERCE', img: '/generated/image-hands-sketching-user-flow-diagrams-in-no-1765511744694-10.webp', description: 'Bridging social media and shopping experiences' },
+		{ name: 'SMART HOME APP', category: 'IOT', img: '/generated/image-designer-organizing-sticky-notes-on-wall-1765511748211-11.webp', description: 'Simplifying home automation for everyone' }
 	];
 </script>
 
-<div class="min-h-screen bg-[#F4F4F2] text-[#1A1A1A] font-sans selection:bg-[#8B3A22] selection:text-white overflow-x-hidden">
+<div class="min-h-screen bg-white text-[#1A1A1A] font-sans selection:bg-primary-500 selection:text-white overflow-x-hidden">
 	<Header />
 
 	<main>
 		<!-- Hero Section -->
-		<section class="pt-12 md:pt-20 pb-10 px-4 md:px-8">
+		<section class="pt-12 md:pt-20 pb-10 px-4 md:px-8" id="work">
 			<div class="flex flex-col md:flex-row justify-between items-start mb-12 md:mb-24 relative">
 				<div class="max-w-[200px] text-[10px] leading-relaxed uppercase tracking-wide font-medium mt-2">
-					<p>At Avision, we're more than just a creative agency; we're a dynamic platform dedicated to empowering talents.</p>
+					<p>Transforming complex UX challenges into intuitive digital experiences through research-driven design and prototyping.</p>
 				</div>
 				<h1 class="text-[14vw] md:text-[9rem] lg:text-[11rem] leading-[0.8] font-thin tracking-tighter text-right mt-8 md:mt-0 uppercase">
-					Where <br />
-					Creativity
+					Design <br />
+					That
 				</h1>
 			</div>
 
 			<!-- Hero Images -->
 			<div class="grid grid-cols-5 gap-2 md:gap-4 mb-8 h-[30vh] md:h-[50vh]">
-				<div class="overflow-hidden h-full">
-					<img src="https://images.unsplash.com/photo-1620646233562-f2a31adcc8b6?q=80&w=800&auto=format&fit=crop" alt="Hands" class="w-full h-full object-cover hover:scale-110 transition-transform duration-1000" />
+				<div class="overflow-hidden h-full bg-gray-100">
+					<img src="/generated/image-designer-sketching-wireframes-on-paper-a-1765511708435-0.webp" alt="Designer sketching wireframes" class="w-full h-full object-cover hover:scale-110 transition-transform duration-1000" />
 				</div>
-				<div class="overflow-hidden h-full">
-					<img src="https://images.unsplash.com/photo-1618331835717-801e976710b2?q=80&w=800&auto=format&fit=crop" alt="Silhouette" class="w-full h-full object-cover hover:scale-110 transition-transform duration-1000 filter hue-rotate-180" />
+				<div class="overflow-hidden h-full bg-gray-100">
+					<img src="/generated/image-close-up-of-hands-arranging-ui-design-ca-1765511712908-1.webp" alt="UX research session" class="w-full h-full object-cover hover:scale-110 transition-transform duration-1000" />
 				</div>
-				<div class="overflow-hidden h-full">
-					<img src="https://images.unsplash.com/photo-1570158268183-d296b2892211?q=80&w=800&auto=format&fit=crop" alt="Portrait" class="w-full h-full object-cover hover:scale-110 transition-transform duration-1000" />
+				<div class="overflow-hidden h-full bg-gray-100">
+					<img src="/generated/image-designer-reviewing-digital-prototypes-on-1765511716537-2.webp" alt="Reviewing prototypes" class="w-full h-full object-cover hover:scale-110 transition-transform duration-1000" />
 				</div>
-				<div class="overflow-hidden h-full">
-					<img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" alt="Mirror" class="w-full h-full object-cover hover:scale-110 transition-transform duration-1000" />
+				<div class="overflow-hidden h-full bg-gray-100">
+					<img src="/generated/image-young-designer-presenting-design-concept-1765511720011-3.webp" alt="Design presentation" class="w-full h-full object-cover hover:scale-110 transition-transform duration-1000" />
 				</div>
-				<div class="overflow-hidden h-full">
-					<img src="https://images.unsplash.com/photo-1582201942988-13e60e4556ee?q=80&w=800&auto=format&fit=crop" alt="Art" class="w-full h-full object-cover hover:scale-110 transition-transform duration-1000" />
+				<div class="overflow-hidden h-full bg-gray-100">
+					<img src="/generated/image-designer-working-on-laptop-with-design-s-1765511723443-4.webp" alt="Designer at work" class="w-full h-full object-cover hover:scale-110 transition-transform duration-1000" />
 				</div>
 			</div>
 
 			<div class="flex flex-col md:flex-row justify-between items-start">
 				<span class="text-[10px] uppercase tracking-wide font-medium mt-4 hidden md:block">Scroll</span>
 				<h1 class="text-[14vw] md:text-[9rem] lg:text-[11rem] leading-[0.8] font-thin tracking-tighter text-right w-full uppercase">
-					Meets <br />
-					Opportunity
+					Solves <br />
+					Problems
 				</h1>
 			</div>
 		</section>
@@ -74,93 +74,94 @@
 				<span class="text-[10px] font-bold uppercase tracking-widest">Services</span>
 			</div>
 
-			<div class="border-t border-gray-300">
+			<div class="border-t border-gray-200">
 				{#each services as service}
-					<div class="group border-b border-gray-300 py-6 md:py-10 px-4 md:px-8 flex items-center justify-between hover:bg-white transition-colors cursor-pointer">
-						<span class="text-[10px] font-medium text-gray-500 w-8 md:w-12">/{service.id}</span>
+					<div class="group border-b border-gray-200 py-6 md:py-10 px-4 md:px-8 flex items-center justify-between hover:bg-gray-50 transition-colors cursor-pointer">
+						<span class="text-[10px] font-medium text-gray-400 w-8 md:w-12">/{service.id}</span>
 						<h2 class="text-3xl md:text-6xl lg:text-7xl font-thin tracking-tight group-hover:italic transition-all duration-300 uppercase">{service.name}</h2>
 						<div class="flex items-center gap-1 text-[10px] font-medium uppercase opacity-0 group-hover:opacity-100 transition-opacity translate-x-[-10px] group-hover:translate-x-0 duration-300">
 							<ArrowUpRight size={12} />
-							Talents
+							Learn More
 						</div>
 					</div>
 				{/each}
 			</div>
 		</section>
 
-		<!-- Team Section -->
-		<section class="py-20 px-4 md:px-8 bg-[#F4F4F2]" id="talents">
+		<!-- Projects Section -->
+		<section class="py-20 px-4 md:px-8 bg-gray-50" id="projects">
 			<div class="flex flex-col md:flex-row justify-between items-start mb-16 md:mb-24">
-				<h2 class="text-4xl md:text-6xl font-light tracking-tight mb-8 md:mb-0 uppercase">Avision Team</h2>
+				<h2 class="text-4xl md:text-6xl font-light tracking-tight mb-8 md:mb-0 uppercase">Featured Projects</h2>
 				<div class="max-w-xs text-[10px] leading-relaxed uppercase tracking-wide font-medium text-right md:text-left">
-					<p>Our team consists of the most creative people from all over the world. For them, this is not just a job, it is what they live by.</p>
+					<p>Portfolio-worthy case studies showcasing research-driven UX solutions for hybrid work tools, gaming platforms, and AI-powered design systems.</p>
 				</div>
 			</div>
 
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-12 md:gap-y-16">
-				{#each team as member}
+				{#each projects as project}
 					<div class="group cursor-pointer">
-						<div class="aspect-[3/4] overflow-hidden mb-4 bg-gray-200">
-							<img src={member.img} alt={member.name} class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+						<div class="aspect-[3/4] overflow-hidden mb-4 bg-gray-100">
+							<img src={project.img} alt={project.name} class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" />
 						</div>
-						<h3 class="text-xs font-bold uppercase tracking-wide mb-1">{member.name}</h3>
-						<p class="text-[10px] text-gray-500 uppercase tracking-wide mb-3">{member.role}</p>
+						<h3 class="text-xs font-bold uppercase tracking-wide mb-1">{project.name}</h3>
+						<p class="text-[10px] text-gray-500 uppercase tracking-wide mb-2">{project.category}</p>
+						<p class="text-[10px] text-gray-600 leading-relaxed mb-3">{project.description}</p>
 						<div class="inline-flex items-center gap-1 text-[10px] font-medium uppercase opacity-0 group-hover:opacity-100 transition-opacity">
 							<ArrowUpRight size={10} />
-							Explore
+							View Case Study
 						</div>
 					</div>
 				{/each}
 				
-				<!-- Join Us Card -->
-				<div class="flex flex-col justify-between h-full min-h-[300px] border border-gray-300 p-8 bg-[#F4F4F2] hover:bg-white transition-colors cursor-pointer group">
+				<!-- More Projects Card -->
+				<div class="flex flex-col justify-between h-full min-h-[300px] border border-gray-200 p-8 bg-white hover:bg-gray-50 transition-colors cursor-pointer group">
 					<div class="flex justify-center items-center flex-1">
-						<ArrowRight size={48} class="text-gray-300 group-hover:text-black transition-colors" />
+						<ArrowRight size={48} class="text-gray-200 group-hover:text-black transition-colors" />
 					</div>
 					<div>
-						<h3 class="text-xs font-bold uppercase tracking-wide mb-1 leading-relaxed">We always welcome<br/>new talents!</h3>
+						<h3 class="text-xs font-bold uppercase tracking-wide mb-1 leading-relaxed">Explore more<br/>design projects</h3>
 						<div class="inline-flex items-center gap-1 text-[10px] font-medium uppercase mt-4">
 							<ArrowUpRight size={10} />
-							Join Us
+							View All
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Studio Section -->
-		<section class="py-20 px-4 md:px-8" id="studio">
+		<!-- About Section -->
+		<section class="py-20 px-4 md:px-8" id="about">
 			<div class="flex flex-col lg:flex-row mb-16 gap-12 lg:gap-24">
 				<div class="flex-1">
-					<h2 class="text-4xl md:text-6xl font-light tracking-tight uppercase">Avision Studio</h2>
+					<h2 class="text-4xl md:text-6xl font-light tracking-tight uppercase">About Sebs Designs</h2>
 				</div>
 				<div class="flex-1">
-					<h2 class="text-3xl md:text-5xl font-light tracking-tight mb-8 text-left uppercase leading-tight">The place where<br/>ideas are born</h2>
+					<h2 class="text-3xl md:text-5xl font-light tracking-tight mb-8 text-left uppercase leading-tight">Research-driven<br/>design solutions</h2>
 					<div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-[10px] leading-relaxed uppercase tracking-wide font-medium">
-						<p>Avision is a creative agency dedicated to providing a platform for talented photographers, videographers & other talents to showcase their work and connect with clients.</p>
-						<p>At Avision, we believe in the power of collaboration and are committed to providing a seamless and efficient process for both clients and team members. As a commission-based agency paid by clients, we offer a simple and transparent pricing structure that allows clients to view team member portfolios, get quotations, and book photography studio spaces, all through our automated systems and proper procedures.</p>
+						<p>Sebs Designs specializes in transforming complex UX challenges into intuitive digital experiences. Through user research, iterative prototyping, and data-driven design decisions, we create solutions that users love.</p>
+						<p>Our portfolio showcases real-world projects across hybrid work tools, gaming platforms, and AI-powered design systems. Each case study demonstrates systematic problem-solving, from initial research through final implementation, providing portfolio-worthy examples for aspiring designers.</p>
 					</div>
-					<a href="#about" class="inline-flex items-center gap-1 text-[10px] font-medium uppercase mt-8 hover:opacity-60 transition-opacity">
+					<a href="#contact" class="inline-flex items-center gap-1 text-[10px] font-medium uppercase mt-8 hover:opacity-60 transition-opacity">
 						<ArrowUpRight size={10} />
-						About
+						Get In Touch
 					</a>
 				</div>
 			</div>
 
 			<div class="flex flex-col md:flex-row gap-4 h-[50vh] md:h-[70vh]">
-				<div class="w-full md:w-[60%] h-full bg-gray-200 overflow-hidden">
-					<img src="https://images.unsplash.com/photo-1596236560753-43f5ec316045?q=80&w=1200&auto=format&fit=crop" alt="Studio" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+				<div class="w-full md:w-[60%] h-full bg-gray-100 overflow-hidden">
+					<img src="/generated/image-modern-workspace-with-design-books-sketc-1765511726960-5.webp" alt="Design workspace" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
 				</div>
 				<div class="w-full md:w-[40%] h-full flex flex-col gap-4">
-					<div class="flex-1 bg-gray-200 overflow-hidden">
-						<img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=800&auto=format&fit=crop" alt="Studio Interior" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+					<div class="flex-1 bg-gray-100 overflow-hidden">
+						<img src="/generated/image-designer-conducting-user-testing-session-1765511730644-6.webp" alt="User testing session" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
 					</div>
 					<div class="flex-1 flex gap-4">
-						<div class="flex-1 bg-gray-200 overflow-hidden">
-							<img src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=600&auto=format&fit=crop" alt="Studio Detail" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+						<div class="flex-1 bg-gray-100 overflow-hidden">
+							<img src="/generated/image-close-up-of-design-system-components-on--1765511734080-7.webp" alt="Design system" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
 						</div>
-						<div class="flex-1 bg-gray-200 overflow-hidden">
-							<img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=600&auto=format&fit=crop" alt="Studio Detail" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+						<div class="flex-1 bg-gray-100 overflow-hidden">
+							<img src="/generated/image-designer-reviewing-mobile-app-prototypes-1765511737640-8.webp" alt="Mobile prototypes" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
 						</div>
 					</div>
 				</div>
@@ -168,41 +169,41 @@
 		</section>
 
 		<!-- CTA Section -->
-		<section class="py-32 px-4 md:px-8 bg-[#8B3A22] text-white text-center">
-			<span class="text-[10px] font-medium uppercase tracking-widest mb-6 block opacity-80">Let's Create Together</span>
+		<section class="py-32 px-4 md:px-8 bg-gray-950 text-white text-center" id="contact">
+			<span class="text-[10px] font-medium uppercase tracking-widest mb-6 block opacity-80">Build Your Portfolio</span>
 			<h2 class="text-4xl md:text-6xl lg:text-8xl font-thin tracking-tight mb-12 uppercase">
-				We'd love to <br />
-				work with you
+				Ready to level up <br />
+				your UX skills?
 			</h2>
-			<a href="#contact" class="inline-block bg-[#1A1A1A] text-white px-10 py-4 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-[#1A1A1A] transition-colors">
-				Contact
+			<a href="mailto:hello@sebsdesigns.com" class="inline-block bg-primary-500 text-white px-10 py-4 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-primary-600 transition-colors">
+				Get In Touch
 			</a>
 		</section>
 
 		<!-- Bottom Gallery -->
 		<div class="grid grid-cols-2 md:grid-cols-5 h-[60vh]">
-			<div class="overflow-hidden">
-				<img src="https://images.unsplash.com/photo-1515462277126-2dd0c162007a?q=80&w=800&auto=format&fit=crop" alt="Dancer" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+			<div class="overflow-hidden bg-gray-100">
+				<img src="/generated/image-young-designer-working-focused-at-laptop-1765511741166-9.webp" alt="Designer at work" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
 			</div>
-			<div class="overflow-hidden">
-				<img src="https://images.unsplash.com/photo-1550614000-4b9519e0037a?q=80&w=800&auto=format&fit=crop" alt="Legs" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+			<div class="overflow-hidden bg-gray-100">
+				<img src="/generated/image-hands-sketching-user-flow-diagrams-in-no-1765511744694-10.webp" alt="Sketching user flows" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
 			</div>
-			<div class="overflow-hidden">
-				<img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" alt="Veil" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 filter hue-rotate-90" />
+			<div class="overflow-hidden bg-gray-100">
+				<img src="/generated/image-designer-organizing-sticky-notes-on-wall-1765511748211-11.webp" alt="Ideation session" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
 			</div>
-			<div class="overflow-hidden">
-				<img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=800&auto=format&fit=crop" alt="Pillows" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+			<div class="overflow-hidden bg-gray-100">
+				<img src="/generated/image-close-up-of-designers-hands-using-stylus-1765511751808-12.webp" alt="Digital design work" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
 			</div>
-			<div class="overflow-hidden hidden md:block">
-				<img src="https://images.unsplash.com/photo-1595665593673-bf1ad72905c0?q=80&w=800&auto=format&fit=crop" alt="Red Dress" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+			<div class="overflow-hidden hidden md:block bg-gray-100">
+				<img src="/generated/image-designer-reviewing-design-feedback-durin-1765511755322-13.webp" alt="Design collaboration" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
 			</div>
 		</div>
 
 		<!-- Footer Marquee -->
 		<div class="overflow-hidden py-6 border-b border-gray-200">
 			<div class="whitespace-nowrap animate-marquee flex">
-				<span class="text-4xl md:text-6xl lg:text-8xl font-thin tracking-tight mx-4 uppercase">Creativity meets opportunity — Where creativity meets opportunity — Where creativity meets opportunity — </span>
-				<span class="text-4xl md:text-6xl lg:text-8xl font-thin tracking-tight mx-4 uppercase">Creativity meets opportunity — Where creativity meets opportunity — Where creativity meets opportunity — </span>
+				<span class="text-4xl md:text-6xl lg:text-8xl font-thin tracking-tight mx-4 uppercase">Design that solves problems — Design that solves problems — Design that solves problems — </span>
+				<span class="text-4xl md:text-6xl lg:text-8xl font-thin tracking-tight mx-4 uppercase">Design that solves problems — Design that solves problems — Design that solves problems — </span>
 			</div>
 		</div>
 	</main>
@@ -210,31 +211,33 @@
 	<footer class="px-4 md:px-8 py-12 text-[10px] font-medium uppercase tracking-wide">
 		<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-12 md:gap-8">
 			<div class="flex flex-col gap-3">
-				<a href="#studio" class="hover:opacity-60">Studio</a>
-				<a href="#book" class="hover:opacity-60">Book</a>
-				<a href="#talents" class="hover:opacity-60">Talents</a>
+				<a href="#work" class="hover:opacity-60">Work</a>
 				<a href="#services" class="hover:opacity-60">Services</a>
-				<a href="#gallery" class="hover:opacity-60">Gallery</a>
+				<a href="#projects" class="hover:opacity-60">Projects</a>
+				<a href="#about" class="hover:opacity-60">About</a>
 			</div>
 
 			<div class="text-left md:text-center">
-				<p class="text-xl md:text-3xl font-normal tracking-tight mb-2">+965 97315182</p>
-				<p class="text-lg md:text-2xl font-normal tracking-tight mb-6">INFO@AVISIONKW.COM</p>
-				<p class="text-lg tracking-widest">KUWAIT</p>
+				<p class="text-lg md:text-2xl font-normal tracking-tight mb-6">HELLO@SEBSDESIGNS.COM</p>
+				<p class="text-xs tracking-widest text-gray-500">PORTFOLIO-WORTHY UX PROJECTS</p>
 			</div>
 
 			<div class="flex flex-col gap-3 text-left md:text-right">
-				<a href="#privacy" class="hover:opacity-60">Privacy Policy</a>
-				<a href="#terms" class="hover:opacity-60">Terms & Conditions</a>
+				<a href="https://www.behance.net" target="_blank" rel="noopener noreferrer" class="hover:opacity-60">Behance</a>
+				<a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-60">Dribbble</a>
 			</div>
 		</div>
 
 		<div class="flex flex-col md:flex-row justify-between items-center mt-20 pt-8 border-t border-gray-200 text-[10px] text-gray-400 gap-4">
-			<p>©AVISION STUDIO. ALL RIGHT RESERVRED</p>
-			<div class="flex items-center gap-1">
-				<span class="text-black text-lg font-bold tracking-tight">AVISION</span>
+			<p>© 2024 SEBS DESIGNS. ALL RIGHTS RESERVED</p>
+			<div class="flex items-center gap-2">
+				<svg class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="4" y="4" width="11" height="11" rx="2" fill="currentColor" />
+					<rect x="9" y="9.5" width="10" height="10" rx="2" fill="currentColor" fill-opacity="0.24" />
+				</svg>
+				<span class="text-black text-lg font-bold tracking-tight">SEBS DESIGNS</span>
 			</div>
-			<p>DESIGNED BY VALMAX</p>
+			<p>UX/UI DESIGN PORTFOLIO</p>
 		</div>
 	</footer>
 </div>
